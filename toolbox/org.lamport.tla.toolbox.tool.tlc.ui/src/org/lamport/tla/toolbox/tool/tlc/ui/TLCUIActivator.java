@@ -79,7 +79,8 @@ public class TLCUIActivator extends AbstractTLCActivator
         super.start(context);
         plugin = this;
 
-        changedColor = new Color(null, 255, 200, 200);
+        //changedColor = new Color(null, 255, 200, 200);
+        changedColor = new Color(null, 150, 50, 50);
         addedColor = new Color(null, 255, 255, 200);
         deletedColor = new Color(null, 240, 240, 255);
         

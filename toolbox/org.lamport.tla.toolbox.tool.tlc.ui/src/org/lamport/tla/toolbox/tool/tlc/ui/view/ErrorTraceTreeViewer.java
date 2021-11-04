@@ -83,6 +83,8 @@ class ErrorTraceTreeViewer {
 
     
 	private final TreeViewer treeViewer;
+
+	private final static Color myBlackColor = new Color(0,0,0);
 	
     // listener on changes to the error trace font preference
     private final IPropertyChangeListener errorTraceFontChangeListener;
@@ -489,6 +491,7 @@ class ErrorTraceTreeViewer {
 
 			if (TLAEditorActivator.getDefault().isCurrentThemeDark()) {
 				cell.setForeground((bg == null) ? null : Display.getCurrent().getSystemColor(SWT.COLOR_BLACK));
+				//cell.setForeground((bg == null) ? null : myBlackColor);
 			} else {
 				cell.setForeground(null);
 			}
